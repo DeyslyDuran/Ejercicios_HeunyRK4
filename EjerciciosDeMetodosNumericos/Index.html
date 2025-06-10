@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ejercicio1</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="Estilos/estilos.css" />
+</head>
+<body>
+  <header class="bg-dark text-white text-center py-3">
+    <h1 class="m-0">EJERCICIOS</h1>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Métodos Numéricos</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="Index.html">Ejercicio 1</a></li>
+          <li class="nav-item"><a class="nav-link" href="ejercicio2.html">Ejercicio 2</a></li>
+          <li class="nav-item"><a class="nav-link" href="ejercicio3.html">Ejercicio 3</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container text-center mt-4">
+    <h2 class="titulo-seccion">CRECIMIENTO POBLACIONAL</h2>
+  </div>
+
+  <div class="container mt-3">
+    <div class="card card-custom">
+      <img src="Img/Ej1.png" class="card-img-top" alt="Imagen ilustrativa" />
+      <div class="card-body">
+        <p class="card-text">El crecimiento poblacional de una especie con capacidad puede moldearse con la ecuacion (Foto1) 
+          Donde N es el tamaño de la poblacion en el tiempo t, Nm es el número máximo de individuos (capacidad límite del medio), k es una constante positiva               
+          Condiciones: Nm=5000 , k= 0.0000951/año , N(0)=100.
+          Determina N(t) para 0≤t≤20 .
+
+
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <h4 class="text-center"> RESULTADOS CON Códigos</h4>
+    <div id="carouselCodigo" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active"><img src="Img/e1.png" class="d-block w-100" alt="Código"></div>
+        <div class="carousel-item active"><img src="Img/re1.png" class="d-block w-100" alt="Código 1"></div>
+        <div class="carousel-item"><img src="Img/Res1.png" class="d-block w-100" alt="Código 2"></div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselCodigo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselCodigo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <table class="table table-striped table-hover tabla-estilo">
+      <thead><!-- Encabezados --></thead>
+      <tbody><!-- Cuerpo de tabla --></tbody>
+    </table>
+  </div>
+
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-6 mb-3"><div class="card card-custom">INTERPRETACION: De acuerdo con estos datos, si una especie comienza con solo 100 individuos en un ambiente que soporta hasta 5000, su población crecerá aceleradamente durante los primeros 10 años, superando los 3400 individuos, y luego el crecimiento se desacelera. Al llegar al año 20, la población casi alcanza el límite, con aproximadamente 4976 individuos.</div></div>
+      <div class="col-md-6 mb-3"><div class="card card-custom">RECOMENDACIONES : Para análisis preliminares o rápidos, Heun puede ser adecuado.
+
+Para modelado profesional, predicción precisa y simulación científica, Runge-Kutta de 4to orden es la opción recomendada.
+
+ </div></div>
+      <div class="col-md-6 mb-3"><div class="card card-custom">Ambos métodos muestran un crecimiento similar, pero RK4 es más preciso, especialmente cuando la función derivada cambia rápidamente. Este es el caso de modelos logísticos.
+
+</div></div>
+      <div class="col-md-6 mb-3"><div class="card card-custom">CONCLUSION:Ambos métodos predicen correctamente el comportamiento logístico: crecimiento acelerado al inicio, desaceleración progresiva y estabilización cerca de la capacidad del ambiente.
+
+Sin embargo, el método de Runge-Kutta de 4to orden ofrece una estimación más precisa del tamaño poblacional en cada instante de tiempo. La diferencia con respecto a Heun es especialmente notable durante las fases críticas del crecimiento (años 5 a 10).
+
+A los 20 años, ambos métodos convergen muy cerca del valor límite de 5000 individuos, pero RK4 llega con una diferencia menor de solo 5.78 individuos respecto al límite teórico.</div></div>
+    </div>
+  </div>
+
+  <div class="container mt-5 mb-5">
+    <h4 class="text-center">Resultados graficos </h4>
+    <div id="carouselResultados" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active"><img src="Img/g1.png" class="d-block w-100" alt="Resultado 1"></div>
+        <div class="carousel-item"><img src="Img/GR1.png" class="d-block w-100" alt="Resultado 2"></div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselResultados" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselResultados" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+  <!-- INICIO: Tabla Comparativa Final -->
+    <h4 class="mt-5">Tabla Comparativa Final</h4>
+    <table class="table table-bordered tabla-estilo">
+      <thead><tr><th>Tiempo</th><th>Heun</th><th>RK4</th><th>Diferencia</th></tr></thead>
+      <tbody>
+        <tr><td>0</td><td>100.00</td><td>100.00</td> <td>0.00</td></tr>
+        <tr><td>5</td><td>861.84</td><td>899.29</td> <td>37.45</td></tr>
+        <tr><td>10</td><td>3427.08</td><td>	3510.74</td> <td>83.66</td></tr>
+        <tr><td>15</td><td>	4779.20</td><td>4810.07</td> <td>30.87</td></tr>
+        <tr><td>20</td><td>4975.90</td><td>4981.68</td> <td>5.78</td></tr>
+       
+      </tbody>
+    </table>
+    <!-- FIN: Tabla Comparativa Final -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

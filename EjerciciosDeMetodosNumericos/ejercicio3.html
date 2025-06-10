@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ejercicio3</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="Estilos/estilos.css" />
+</head>
+<body>
+  <header class="bg-dark text-white text-center py-3">
+    <h1 class="m-0">EJERCICIOS</h1>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Metodos Numericos</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="Index.html">Ejercicio 1</a></li>
+          <li class="nav-item"><a class="nav-link" href="ejercicio2.html">Ejercicio 2</a></li>
+          <li class="nav-item"><a class="nav-link" href="ejercicio3.html">Ejercicio 3</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container text-center mt-4">
+    <h2 class="titulo-seccion">CAIDA LIBRE</h2>
+  </div>
+
+  <div class="container mt-3">
+    <div class="card card-custom">
+      <img src="Img/Ej3.png" class="card-img-top" alt="Imagen ilustrativa" />
+      <div class="card-body">
+        <p class="card-text">La velocidad 
+𝑣
+v de un objeto que cae libremente bajo la gravedad terrestre, considerando resistencia del aire cuadrática, se modela por la ecuación diferencial: <P>m es la masa del objeto,
+
+𝑔
+=
+9.81
+ 
+m/s
+2
+g=9.81m/s 
+2
+  es la aceleración de la gravedad,
+
+𝑘
+k es una constante de resistencia del medio.</P> <p>Se pide resolver esta ecuación para:
+
+𝑚
+=
+5
+ 
+kg
+m=5kg,
+
+𝑘
+=
+0.05
+ 
+kg/m
+k=0.05kg/m,
+
+𝑣
+(
+0
+)
+=
+0
+ 
+m/s
+v(0)=0m/s,
+
+Intervalo de tiempo: 
+0
+≤
+𝑡
+≤
+15
+ 
+s
+0≤t≤15s,
+
+y hacer una gráfica de 
+𝑣
+(
+𝑡
+)
+v(t).
+
+
+
+</p>
+</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <h4 class="text-center"> RESULTADOS EN Códigos</h4>
+    <div id="carouselCodigo" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active"><img src="Img/image copy 2.png" class="d-block w-100" alt="Código 1"></div>
+        <div class="carousel-item"><img src="Img/image copy.png" class="d-block w-100" alt="Código 2"></div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselCodigo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselCodigo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <table class="table table-striped table-hover tabla-estilo">
+      <thead>ANALISIS</thead>
+      <tbody>CONCLUSIVO</tbody>
+    </table>
+  </div>
+
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-6 mb-3"><div class="card card-custom">CONCLUSION FISICA : De acuerdo a los datos, el objeto alcanza una velocidad límite aproximada de −31.32 m/s tras unos 10 segundos de caída. Esta velocidad terminal representa el equilibrio entre la fuerza gravitacional y la resistencia del aire. Si este objeto fuera, por ejemplo, una sonda atmosférica o una persona en caída libre con traje aerodinámico, sabríamos que esa sería su máxima velocidad durante la caída.</div></div>
+      <div class="col-md-6 mb-3"><div class="card card-custom">La gráfica representa el comportamiento de un objeto real (como una persona en caída libre o una cápsula de prueba) donde el aire ofrece resistencia proporcional al cuadrado de la velocidad. Inicialmente, la aceleración es casi 9.81 m/s² (como en el vacío), pero conforme la velocidad crece, la fuerza de resistencia (kv²) aumenta hasta igualar al peso (mg). <p>El comportamiento asintótico es clave: ningún objeto real seguirá acelerando indefinidamente al caer. Ambos métodos convergen al mismo resultado porque el problema está bien condicionado.
+
+</p></div></div>
+      <div class="col-md-6 mb-3"><div class="card card-custom">Gracias al uso de métodos numéricos de orden superior como Runge-Kutta 4°, podemos modelar con gran precisión sistemas dinámicos reales. En este caso, logramos describir la caída de un objeto con resistencia del aire cuadrática y determinar con confianza que su velocidad máxima alcanzable es de aproximadamente −31.32 m/s. Esto tiene aplicaciones en aeronáutica, diseño de paracaídas, y simulación física en videojuegos o entrenamiento virtual.</div></div>
+      <div class="col-md-6 mb-3"><div class="card card-custom">En este contexto físico, si dejamos caer un objeto de 5 kg con resistencia cuadrática del aire, su velocidad no crecerá indefinidamente. De acuerdo con el modelo y los cálculos realizados con el Método de Heun, el objeto alcanzará una velocidad terminal de aproximadamente −31.31 m/s en unos 10 segundos. A partir de ahí, descenderá a velocidad constante.</div></div>
+    </div>
+  </div>
+
+  <div class="container mt-5 mb-5">
+    <h4 class="text-center">Resultados de las Graficas</h4>
+    <div id="carouselResultados" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active"><img src="Img/image copy 3.png" class="d-block w-100" alt="Resultado 1"></div>
+        <div class="carousel-item"><img src="Img/image copy 4.png" class="d-block w-100" alt="Resultado 2"></div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselResultados" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselResultados" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+  <!-- INICIO: Tabla Comparativa Final -->
+    <h4 class="mt-5">Tabla Comparativa Final</h4>
+    <table class="table table-bordered tabla-estilo">
+      <thead><tr><th>Tiempo</th><th>Heun</th><th>RK4</th><th>Diferencia</th></tr></thead>
+      <tbody>
+        <tr><td>0</td><td>0.00</td><td>0.00</td> <td>0.00</td></tr>
+        <tr><td>5</td><td>-28.71</td><td>-28.70</td> <td>0.01</td></tr>
+        <tr><td>10</td><td>-31.20</td><td>-31.20</td> <td>0.00</td></tr>
+        <tr><td>15</td><td>	31.32</td><td>-31.32</td> <td>0.00</td></tr>
+        
+      </tbody>
+    </table>
+    <!-- FIN: Tabla Comparativa Final -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
